@@ -16,3 +16,6 @@ Students should create one R script called run_analysis.R that does the followin
 3. Uses descriptive activity names to name the activities in the data set.
 4. Appropriately labels the data set with descriptive variable names.
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
+
+## Data processing executed by run_analysis.R
+The R script first downloads the compressed activity data and its directory structure to the R working directory.  This zipped file is then extracting using the unzip() function, and saved to the selected subdirectory.
