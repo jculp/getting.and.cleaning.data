@@ -19,3 +19,9 @@ Students should create one R script called run_analysis.R that does the followin
 
 ## Data processing executed by run_analysis.R
 The R script first downloads the compressed activity data and its directory structure to the R working directory.  This zipped file is then extracting using the unzip() function, and saved to the selected subdirectory.
+
+Training and testing observations are read into R using via read.table(), after which the dataset (training or testing) is identified in a final column.  The training and testing datasets are then merged via rbind().  A file containing the observations' features is then read in and assigned to the column names of this merged dataset (x).
+
+The activity codes associated with each dataset are similarly read into R, merged and named (y).
+
+The subject codes associated with each dataset are similarly read into R, merged, and named (subject).
