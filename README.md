@@ -28,3 +28,5 @@ The activity codes associated with each dataset are similarly read into R, merge
 The subject codes associated with each dataset are similarly read into R, merged, and named (subject).
 
 At this point, the activity codes (y), subject codes (subject), and actual observations (x) are merged together via cbind() into the data object.
+
+### 2. Extracting mean and standard deviation measurements
