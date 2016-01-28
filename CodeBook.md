@@ -21,6 +21,8 @@ For each record in the dataset it is provided:
  - Its activity label. 
  - An identifier of the subject who carried out the experiment.
 
+INSERT A TABLE OF VARIABLES  HERE?
+
 ## Relevant Papers
 
 
