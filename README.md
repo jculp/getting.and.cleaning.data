@@ -31,3 +31,9 @@ At this point, the activity codes (`y`), subject codes (`subject`), and actual o
 
 #### 2. Extracting mean and standard deviation measurements
 From the combined `data` object, measurements not related to a mean or standard deviation are removed using `grepl()` and indexing.
+
+#### 3. Descriptive activity names
+Similar to the initial datasets, a list of descriptive activity labels is read into R.  These labels are set to all lower-case and spaces are replaces with periods.  The `data object is then updated with these descriptive activity labels based on the activity code from `y`.
+
+#### 4. Descriptive variable names
+Something
