@@ -327,7 +327,54 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 Training and testing datasets for the measurement observations, activities, and subjects were appended together into a single dataset.  The supplied features were used as headers for the various measurements.
 
 #### Dataset Filtering
-Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.
+Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.  The retained measurements are provided here.
+
+| Measurement | Description | Measurement | Description
+-----------|-------------|-------------|-------------
+| 1 | tBodyAcc-mean()-X | 44 | fBodyAcc-std()-X
+| 2 | tBodyAcc-mean()-Y | 45 | fBodyAcc-std()-Y
+| 3 | tBodyAcc-mean()-Z | 46 | fBodyAcc-std()-Z
+| 4 | tBodyAcc-std()-X | 47 | fBodyAcc-meanFreq()-X
+| 5 | tBodyAcc-std()-Y | 48 | fBodyAcc-meanFreq()-Y
+| 6 | tBodyAcc-std()-Z | 49 | fBodyAcc-meanFreq()-Z
+| 7 | tGravityAcc-mean()-X | 50 | fBodyAccJerk-mean()-X
+| 8 | tGravityAcc-mean()-Y | 51 | fBodyAccJerk-mean()-Y
+| 9 | tGravityAcc-mean()-Z | 52 | fBodyAccJerk-mean()-Z
+| 10 | tGravityAcc-std()-X | 53 | fBodyAccJerk-std()-X
+| 11 | tGravityAcc-std()-Y | 54 | fBodyAccJerk-std()-Y
+| 12 | tGravityAcc-std()-Z | 55 | fBodyAccJerk-std()-Z
+| 13 | tBodyAccJerk-mean()-X | 56 | fBodyAccJerk-meanFreq()-X
+| 14 | tBodyAccJerk-mean()-Y | 57 | fBodyAccJerk-meanFreq()-Y
+| 15 | tBodyAccJerk-mean()-Z | 58 | fBodyAccJerk-meanFreq()-Z
+| 16 | tBodyAccJerk-std()-X | 59 | fBodyGyro-mean()-X
+| 17 | tBodyAccJerk-std()-Y | 60 | fBodyGyro-mean()-Y
+| 18 | tBodyAccJerk-std()-Z | 61 | fBodyGyro-mean()-Z
+| 19 | tBodyGyro-mean()-X | 62 | fBodyGyro-std()-X
+| 20 | tBodyGyro-mean()-Y | 63 | fBodyGyro-std()-Y
+| 21 | tBodyGyro-mean()-Z | 64 | fBodyGyro-std()-Z
+| 22 | tBodyGyro-std()-X | 65 | fBodyGyro-meanFreq()-X
+| 23 | tBodyGyro-std()-Y | 66 | fBodyGyro-meanFreq()-Y
+| 24 | tBodyGyro-std()-Z | 67 | fBodyGyro-meanFreq()-Z
+| 25 | tBodyGyroJerk-mean()-X | 68 | fBodyAccMag-mean()
+| 26 | tBodyGyroJerk-mean()-Y | 69 | fBodyAccMag-std()
+| 27 | tBodyGyroJerk-mean()-Z | 70 | fBodyAccMag-meanFreq()
+| 28 | tBodyGyroJerk-std()-X | 71 | fBodyBodyAccJerkMag-mean()
+| 29 | tBodyGyroJerk-std()-Y | 72 | fBodyBodyAccJerkMag-std()
+| 30 | tBodyGyroJerk-std()-Z | 73 | fBodyBodyAccJerkMag-meanFreq()
+| 31 | tBodyAccMag-mean() | 74 | fBodyBodyGyroMag-mean()
+| 32 | tBodyAccMag-std() | 75 | fBodyBodyGyroMag-std()
+| 33 | tGravityAccMag-mean() | 76 | fBodyBodyGyroMag-meanFreq()
+| 34 | tGravityAccMag-std() | 77 | fBodyBodyGyroJerkMag-mean()
+| 35 | tBodyAccJerkMag-mean() | 78 | fBodyBodyGyroJerkMag-std()
+| 36 | tBodyAccJerkMag-std() | 79 | fBodyBodyGyroJerkMag-meanFreq()
+| 37 | tBodyGyroMag-mean() | 80 | angle(tBodyAccMean,gravity)
+| 38 | tBodyGyroMag-std() | 81 | angle(tBodyAccJerkMean),gravityMean)
+| 39 | tBodyGyroJerkMag-mean() | 82 | angle(tBodyGyroMean,gravityMean)
+| 40 | tBodyGyroJerkMag-std() | 83 | angle(tBodyGyroJerkMean,gravityMean)
+| 41 | fBodyAcc-mean()-X | 84 | angle(X,gravityMean)
+| 42 | fBodyAcc-mean()-Y | 85 | angle(Y,gravityMean)
+| 43 | fBodyAcc-mean()-Z | 86 | angle(Z,gravityMean)
+
 
 #### Descriptive Naming
 Activity codes within the dataset were updated with the supplied list of descriptive activity labels.  Values for the activity labels and the headers for all the retained measurement fields were formatted in lower case with extraneous punctuation removed.
