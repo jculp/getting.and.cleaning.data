@@ -18,7 +18,7 @@ Students should create one R script called run_analysis.R that does the followin
 5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Data processing executed by run_analysis.R
-For the purpose of further analysis, a single script named `run_analysis.R` reads, cleanses, and restructures raw datasets associated with smartphone-recognition of human activity.  This data is provided by the Center for Machine Learning and Intelligent Systems at the Unveristy of California Irvine, and the R script's processing is described below.
+For the purpose of further analysis, a single script named `run_analysis.R` reads, cleanses, and restructures raw datasets associated with smartphone-recognition of human activity.  This data is provided by the Center for Machine Learning and Intelligent Systems at the Unveristy of California Irvine.  The processing executed by the script is described below.
 
 #### 1. Merging the datasets
 The R script first downloads the compressed **UCI HAR** activity data and its directory structure to the R working directory.  This zipped file is then extracting using the `unzip()` function, and saved to the selected subdirectory.
