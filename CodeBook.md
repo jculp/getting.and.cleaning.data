@@ -1,5 +1,5 @@
 # CodeBook for UCI HAR Dataset and Processing
-## Dataset Information
+## Raw Dataset Information
 A Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.  The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (listed below) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data.
 
 | Activity Code | Descriptive Activity
@@ -13,7 +13,7 @@ A Human Activity Recognition database built from the recordings of 30 subjects p
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-## Attribute Information
+## Raw Attribute Information
 For each record in the dataset it is provided: 
  - Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
  - Triaxial Angular velocity from the gyroscope. 
@@ -308,7 +308,7 @@ The complete list of time and frequency domain variables is provided here.
 |  |  | 561 | angle(Z,gravityMean)
 
 
-## Papers Relevant to Dataset
+## Papers Relevant to Raw Dataset
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012 
 
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra, Jorge L. Reyes-Ortiz. Energy Efficient Smartphone-Based Activity Recognition using Fixed-Point Arithmetic. Journal of Universal Computer Science. Special Issue in Ambient Assisted Living: Home Care. Volume 19, Issue 9. May 2013
@@ -317,9 +317,20 @@ Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ort
 
 Jorge Luis Reyes-Ortiz, Alessandro Ghio, Xavier Parra-Llanas, Davide Anguita, Joan Cabestany, Andreu Català. Human Activity and Motion Disorder Recognition: Towards Smarter Interactive Cognitive Environments. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
-## Citation Request for Dataset
+## Citation Request for Raw Dataset
 Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. A Public Domain Dataset for Human Activity Recognition Using Smartphones. 21th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning, ESANN 2013. Bruges, Belgium 24-26 April 2013.
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
-## Dataset Processing
+## Dataset Pre-Analysis Processing
+#### Dataset Aggregation
+Training and testing datasets for the measurement observations, activities, and subjects were appended together into a single dataset.  The supplied features were used as headers for the various measurements.
+
+#### Dataset Filtering
+Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.
+
+#### Descriptive Naming
+Activity codes within the dataset were updated with the supplied list of descriptive activity labels.  Values for the activity labels and the headers for all the retained measurement fields were formatted in lower case with extraneous punctuation removed.
+
+#### Final Dataset for Analysis
+The single, filtered dataset from above was then grouped by activity and subject and summarized to a final dataset.  The mean was calculated of all retained measurements and returned for each unique combination of activity and subject.
