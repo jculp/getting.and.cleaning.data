@@ -30,3 +30,4 @@ The subject codes associated with each dataset are similarly read into R, merged
 At this point, the activity codes (y), subject codes (subject), and actual observations (x) are merged together via cbind() into the data object.
 
 #### 2. Extracting mean and standard deviation measurements
+From the combined data object, measurements not related to a mean or standard deviation are removed using grepl() and indexing.
