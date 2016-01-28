@@ -23,7 +23,7 @@ For each record in the dataset it is provided:
 
 The complete list of time and frequency domain variables is provided here.
 
-| Measurement | Description
+<sub>| Measurement | Description</sub>
 -----------|-------------
 | 1 | tBodyAcc-mean()-X
 | 2 | tBodyAcc-mean()-Y
