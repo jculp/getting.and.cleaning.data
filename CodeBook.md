@@ -324,13 +324,13 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ## Dataset Pre-Analysis Processing
 #### Dataset Aggregation
-Training and testing datasets for the measurement observations, activities, and subjects were appended together into a single dataset.  The supplied features were used as headers for the various measurements.  For more details, see the associated README.md file.
+Training and testing datasets for the measurement observations, activities, and subjects were appended together into a single dataset.  The supplied features were used as headers for the various measurements.  For more details, see the associated [README.md](./README.md) file.
 
 #### Dataset Filtering
-Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.  For more details, see the associated README.md file.
+Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.  For more details, see the associated [README.md](./README.md) file.
 
 #### Descriptive Naming
-Activity codes within the dataset were updated with the supplied list of descriptive activity labels.  Values for the activity labels and the headers for all the retained measurement fields were formatted in lower case with extraneous punctuation removed.  The retained measurements named with improved descriptions are provided here.  For more details, see the associated README.md file.
+Activity codes within the dataset were updated with the supplied list of descriptive activity labels.  Values for the activity labels and the headers for all the retained measurement fields were formatted in lower case with extraneous punctuation removed.  The retained measurements named with improved descriptions are provided here.  For more details, see the associated [README.md](./README.md) file.
 
 | Retained Measurement | Description | Retained Measurement | Description
 -----------|-------------|-------------|-------------
