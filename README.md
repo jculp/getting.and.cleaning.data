@@ -19,21 +19,21 @@ Students should create one R script called run_analysis.R that does the followin
 
 ## Data processing executed by run_analysis.R
 #### 1. Merging the datasets
-The R script first downloads the compressed activity data and its directory structure to the R working directory.  This zipped file is then extracting using the `unzip()` function, and saved to the selected subdirectory.
+The R script first downloads the compressed **UCI HAR** activity data and its directory structure to the R working directory.  This zipped file is then extracting using the `unzip()` function, and saved to the selected subdirectory.
 
-Training and testing observations are read into R using via `read.table()`, after which the dataset (training or testing) is identified in a final column.  The training and testing datasets are then merged via `rbind()`.  A file containing the observations' features is then read in and assigned to the column names of this merged dataset (`x`).
+Training and testing **observations** are read into R using via `read.table()`, after which the dataset (either training or testing) is identified in a final column.  The training and testing datasets are then merged via `rbind()`.  A file containing the observations' **features** is then read in and assigned to the column names of this merged dataset (`x`).
 
-The activity codes associated with each dataset are similarly read into R, merged and named (`y`).
+The **activity codes** associated with each dataset are similarly read into R, merged and named (`y`).
 
-The subject codes associated with each dataset are similarly read into R, merged, and named (`subject`).
+The **subject codes** associated with each dataset are similarly read into R, merged, and named (`subject`).
 
-At this point, the activity codes (`y`), subject codes (`subject`), and actual observations (`x`) are merged together via `cbind()` into the `data` object.
+At this point, the **activity codes** (`y`), **subject codes** (`subject`), and actual **observations** (`x`) are merged together via `cbind()` into the `data` object.
 
 #### 2. Extracting mean and standard deviation measurements
 From the combined `data` object, measurements not related to a mean or standard deviation are removed using `grepl()` and indexing.
 
 #### 3. Descriptive activity names
-Similar to the initial datasets, a list of descriptive activity labels is read into R.  These labels are set to all lower-case using `tolower()` and spaces are replaces with periods using `gsub()`.  The `data` object is then updated with these descriptive activity labels based on the activity code from `y`.
+Similar to the initial datasets, a list of descriptive **activity labels** is read into R.  These labels are set to all lower-case using `tolower()` and spaces are replaces with periods using `gsub()`.  The `data` object is then updated with these descriptive activity labels based on the activity code from `y`.
 
 #### 4. Descriptive variable names
 The headers of the `data` object are then cleaned with `tolower()`, similar to the activity labels earlier.  In addition, parentheses are removed and hyphens are replaced with periods, again with `gsub()`.
