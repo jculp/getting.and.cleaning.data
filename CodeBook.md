@@ -324,13 +324,13 @@ http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartpho
 
 ## Dataset Pre-Analysis Processing
 #### Dataset Aggregation
-Training and testing datasets for the measurement observations, activities, and subjects were appended together into a single dataset.  The supplied features were used as headers for the various measurements.
+Training and testing datasets for the measurement observations, activities, and subjects were appended together into a single dataset.  The supplied features were used as headers for the various measurements.  For more details, see the associated README.md file.
 
 #### Dataset Filtering
-Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.
+Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.  For more details, see the associated README.md file.
 
 #### Descriptive Naming
-Activity codes within the dataset were updated with the supplied list of descriptive activity labels.  Values for the activity labels and the headers for all the retained measurement fields were formatted in lower case with extraneous punctuation removed.  The retained measurements named with improved descriptions are provided here.
+Activity codes within the dataset were updated with the supplied list of descriptive activity labels.  Values for the activity labels and the headers for all the retained measurement fields were formatted in lower case with extraneous punctuation removed.  The retained measurements named with improved descriptions are provided here.  For more details, see the associated README.md file.
 
 | Retained Measurement | Description | Retained Measurement | Description
 -----------|-------------|-------------|-------------
@@ -379,4 +379,4 @@ Activity codes within the dataset were updated with the supplied list of descrip
 | 43 | fbodyacc.mean.z | 86 | anglez.gravitymean
 
 #### Final Dataset for Analysis
-The single, filtered dataset from above was then grouped by activity and subject and summarized to a final dataset.  The mean was calculated of all retained measurements and returned for each unique combination of activity and subject.
+The single, filtered dataset from above was then grouped by activity and subject and summarized to a final dataset.  The mean was calculated of all retained measurements and returned for each unique combination of activity and subject.  For more details, see the associated [README.md](./README.md) file.
