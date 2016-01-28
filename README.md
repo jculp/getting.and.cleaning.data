@@ -33,7 +33,10 @@ At this point, the activity codes (`y`), subject codes (`subject`), and actual o
 From the combined `data` object, measurements not related to a mean or standard deviation are removed using `grepl()` and indexing.
 
 #### 3. Descriptive activity names
-Similar to the initial datasets, a list of descriptive activity labels is read into R.  These labels are set to all lower-case and spaces are replaces with periods.  The `data` object is then updated with these descriptive activity labels based on the activity code from `y`.
+Similar to the initial datasets, a list of descriptive activity labels is read into R.  These labels are set to all lower-case using `tolower()` and spaces are replaces with periods using `gsub()`.  The `data` object is then updated with these descriptive activity labels based on the activity code from `y`.
 
 #### 4. Descriptive variable names
-Something
+The headers of the `data` object are then cleaned with `tolower()`, similar to the activity labels earlier.  In addition, parentheses are removed and hyphens are replaced with periods, again with `gsub()`.
+
+#### 5. Tidy dataset
+Finally, by utilizing `group_by()` and `summarize_each()` from the `tidyr` package, a final dataset is created as the `data.tidy` object.  Each row in this dataset represents a unique combination of activy and subject.  For each unique combination, the means of all mean or standard deviation measurements are provided.
