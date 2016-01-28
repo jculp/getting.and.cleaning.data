@@ -4,9 +4,9 @@ The purpose of this project is to demonstrate the student's ability to collect, 
 
 1. A tidy data set as described below.
 2. A link to a Github repository with your script for performing the analysis.
-3. A code book that describes the variables, the data, and any transformations or work that the student performed to clean up the data called CodeBook.md.
+3. A code book that describes the variables, the data, and any transformations or work that the student performed to clean up the data called `CodeBook.md`.
 
-Students should also include a README.md in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
+Students should also include a `README.md` in the repo with your scripts. This repo explains how all of the scripts work and how they are connected.
 
 ## Objectives
 Students should create one R script called run_analysis.R that does the following:
