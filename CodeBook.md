@@ -23,7 +23,8 @@ For each record in the dataset it is provided:
 
 The complete list of time and frequency domain variables is provided here.
 
-<sub>| Measurement | Description</sub>
+<sub>
+| Measurement | Description
 -----------|-------------
 | 1 | tBodyAcc-mean()-X
 | 2 | tBodyAcc-mean()-Y
@@ -586,7 +587,7 @@ The complete list of time and frequency domain variables is provided here.
 | 559 | angle(X,gravityMean)
 | 560 | angle(Y,gravityMean)
 | 561 | angle(Z,gravityMean)
-
+</sub>
 
 ## Relevant Papers
 
