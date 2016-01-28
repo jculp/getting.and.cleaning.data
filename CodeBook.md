@@ -329,7 +329,7 @@ Training and testing datasets for the measurement observations, activities, and 
 #### Dataset Filtering
 Of the single dataset, only measurements relating to a mean or standard deviation were retained, in addition to the subject and activity associated with each record.  The retained measurements are provided here.
 
-| Measurement | Description | Measurement | Description
+| Retained Measurement | Description | Retained Measurement | Description
 -----------|-------------|-------------|-------------
 | 1 | tBodyAcc-mean()-X | 44 | fBodyAcc-std()-X
 | 2 | tBodyAcc-mean()-Y | 45 | fBodyAcc-std()-Y
